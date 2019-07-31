@@ -12,7 +12,7 @@
       <Value Profile="(Default)">SchoolSoft</Value>
     </Setting>
     <Setting Name="serverName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">KEKLF-LT0944-L\SQLEXPRESS</Value>
+      <Value Profile="(Default)">DESKTOP-FV1KTBF</Value>
     </Setting>
     <Setting Name="EndDate" Type="System.DateTime" Scope="User">
       <Value Profile="(Default)">2019-12-31</Value>
