@@ -1,0 +1,328 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmFinRptFeeBalances
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.pnlFeeBalances = New System.Windows.Forms.Panel()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cboReportType = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cboYear = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnLoad = New System.Windows.Forms.Button()
+        Me.cboClass = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cboTerm = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.StatusStrip12 = New System.Windows.Forms.StatusStrip()
+        Me.StatusStrip13 = New System.Windows.Forms.StatusStrip()
+        Me.StatusStrip14 = New System.Windows.Forms.StatusStrip()
+        Me.StatusStrip5 = New System.Windows.Forms.StatusStrip()
+        Me.crtVwFinFeeBalRpt = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.StatusStrip2 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.pnlFeeBalances.SuspendLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.StatusStrip2.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'pnlFeeBalances
+        '
+        Me.pnlFeeBalances.BackColor = System.Drawing.SystemColors.Control
+        Me.pnlFeeBalances.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlFeeBalances.Controls.Add(Me.SplitContainer1)
+        Me.pnlFeeBalances.Controls.Add(Me.StatusStrip2)
+        Me.pnlFeeBalances.Location = New System.Drawing.Point(12, 12)
+        Me.pnlFeeBalances.Name = "pnlFeeBalances"
+        Me.pnlFeeBalances.Size = New System.Drawing.Size(999, 586)
+        Me.pnlFeeBalances.TabIndex = 0
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 25)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel1)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.StatusStrip12)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.StatusStrip13)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.StatusStrip14)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.StatusStrip5)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.crtVwFinFeeBalRpt)
+        Me.SplitContainer1.Size = New System.Drawing.Size(997, 559)
+        Me.SplitContainer1.SplitterDistance = 52
+        Me.SplitContainer1.SplitterWidth = 1
+        Me.SplitContainer1.TabIndex = 25
+        '
+        'Panel1
+        '
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.cboReportType)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.cboYear)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.btnClose)
+        Me.Panel1.Controls.Add(Me.btnLoad)
+        Me.Panel1.Controls.Add(Me.cboClass)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.cboTerm)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(5, 5)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(985, 40)
+        Me.Panel1.TabIndex = 69
+        '
+        'cboReportType
+        '
+        Me.cboReportType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboReportType.FormattingEnabled = True
+        Me.cboReportType.Items.AddRange(New Object() {"Detailed", "Summary"})
+        Me.cboReportType.Location = New System.Drawing.Point(86, 9)
+        Me.cboReportType.Name = "cboReportType"
+        Me.cboReportType.Size = New System.Drawing.Size(104, 21)
+        Me.cboReportType.TabIndex = 75
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(11, 12)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(69, 13)
+        Me.Label4.TabIndex = 74
+        Me.Label4.Text = "Report Type:"
+        '
+        'cboYear
+        '
+        Me.cboYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboYear.FormattingEnabled = True
+        Me.cboYear.Location = New System.Drawing.Point(582, 9)
+        Me.cboYear.Name = "cboYear"
+        Me.cboYear.Size = New System.Drawing.Size(93, 21)
+        Me.cboYear.TabIndex = 73
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(541, 12)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.TabIndex = 72
+        Me.Label3.Text = "Year :"
+        '
+        'btnClose
+        '
+        Me.btnClose.Location = New System.Drawing.Point(899, 7)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.TabIndex = 71
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'btnLoad
+        '
+        Me.btnLoad.Location = New System.Drawing.Point(732, 7)
+        Me.btnLoad.Name = "btnLoad"
+        Me.btnLoad.Size = New System.Drawing.Size(75, 23)
+        Me.btnLoad.TabIndex = 70
+        Me.btnLoad.Text = "Load"
+        Me.btnLoad.UseVisualStyleBackColor = True
+        '
+        'cboClass
+        '
+        Me.cboClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboClass.FormattingEnabled = True
+        Me.cboClass.Location = New System.Drawing.Point(419, 9)
+        Me.cboClass.Name = "cboClass"
+        Me.cboClass.Size = New System.Drawing.Size(103, 21)
+        Me.cboClass.TabIndex = 53
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(375, 12)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.TabIndex = 52
+        Me.Label2.Text = "Class :"
+        '
+        'cboTerm
+        '
+        Me.cboTerm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTerm.FormattingEnabled = True
+        Me.cboTerm.Location = New System.Drawing.Point(253, 9)
+        Me.cboTerm.Name = "cboTerm"
+        Me.cboTerm.Size = New System.Drawing.Size(104, 21)
+        Me.cboTerm.TabIndex = 51
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(213, 12)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(34, 13)
+        Me.Label1.TabIndex = 50
+        Me.Label1.Text = "Term:"
+        '
+        'StatusStrip12
+        '
+        Me.StatusStrip12.AutoSize = False
+        Me.StatusStrip12.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.StatusStrip12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.StatusStrip12.Location = New System.Drawing.Point(0, 5)
+        Me.StatusStrip12.Name = "StatusStrip12"
+        Me.StatusStrip12.Size = New System.Drawing.Size(5, 40)
+        Me.StatusStrip12.SizingGrip = False
+        Me.StatusStrip12.TabIndex = 68
+        Me.StatusStrip12.Text = "StatusStrip12"
+        '
+        'StatusStrip13
+        '
+        Me.StatusStrip13.AutoSize = False
+        Me.StatusStrip13.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.StatusStrip13.Location = New System.Drawing.Point(0, 45)
+        Me.StatusStrip13.Name = "StatusStrip13"
+        Me.StatusStrip13.Size = New System.Drawing.Size(990, 5)
+        Me.StatusStrip13.SizingGrip = False
+        Me.StatusStrip13.TabIndex = 67
+        Me.StatusStrip13.Text = "StatusStrip13"
+        '
+        'StatusStrip14
+        '
+        Me.StatusStrip14.AutoSize = False
+        Me.StatusStrip14.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.StatusStrip14.Dock = System.Windows.Forms.DockStyle.Top
+        Me.StatusStrip14.Location = New System.Drawing.Point(0, 0)
+        Me.StatusStrip14.Name = "StatusStrip14"
+        Me.StatusStrip14.Size = New System.Drawing.Size(990, 5)
+        Me.StatusStrip14.SizingGrip = False
+        Me.StatusStrip14.TabIndex = 66
+        Me.StatusStrip14.Text = "StatusStrip14"
+        '
+        'StatusStrip5
+        '
+        Me.StatusStrip5.AutoSize = False
+        Me.StatusStrip5.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.StatusStrip5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.StatusStrip5.Location = New System.Drawing.Point(990, 0)
+        Me.StatusStrip5.Name = "StatusStrip5"
+        Me.StatusStrip5.Size = New System.Drawing.Size(5, 50)
+        Me.StatusStrip5.SizingGrip = False
+        Me.StatusStrip5.TabIndex = 65
+        Me.StatusStrip5.Text = "StatusStrip5"
+        '
+        'crtVwFinFeeBalRpt
+        '
+        Me.crtVwFinFeeBalRpt.ActiveViewIndex = -1
+        Me.crtVwFinFeeBalRpt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.crtVwFinFeeBalRpt.Cursor = System.Windows.Forms.Cursors.Default
+        Me.crtVwFinFeeBalRpt.DisplayStatusBar = False
+        Me.crtVwFinFeeBalRpt.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.crtVwFinFeeBalRpt.Location = New System.Drawing.Point(0, 0)
+        Me.crtVwFinFeeBalRpt.Name = "crtVwFinFeeBalRpt"
+        Me.crtVwFinFeeBalRpt.ShowGroupTreeButton = False
+        Me.crtVwFinFeeBalRpt.ShowLogo = False
+        Me.crtVwFinFeeBalRpt.ShowParameterPanelButton = False
+        Me.crtVwFinFeeBalRpt.ShowTextSearchButton = False
+        Me.crtVwFinFeeBalRpt.Size = New System.Drawing.Size(995, 504)
+        Me.crtVwFinFeeBalRpt.TabIndex = 38
+        Me.crtVwFinFeeBalRpt.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        '
+        'StatusStrip2
+        '
+        Me.StatusStrip2.AutoSize = False
+        Me.StatusStrip2.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.StatusStrip2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.StatusStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
+        Me.StatusStrip2.Location = New System.Drawing.Point(0, 0)
+        Me.StatusStrip2.Name = "StatusStrip2"
+        Me.StatusStrip2.Size = New System.Drawing.Size(997, 25)
+        Me.StatusStrip2.SizingGrip = False
+        Me.StatusStrip2.TabIndex = 24
+        Me.StatusStrip2.Text = "StatusStrip2"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(157, 20)
+        Me.ToolStripStatusLabel1.Text = "FINANCE FEE BALANCES"
+        '
+        'frmFinRptFeeBalances
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.ClientSize = New System.Drawing.Size(1023, 610)
+        Me.Controls.Add(Me.pnlFeeBalances)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "frmFinRptFeeBalances"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Fee Balances"
+        Me.pnlFeeBalances.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.StatusStrip2.ResumeLayout(False)
+        Me.StatusStrip2.PerformLayout()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents pnlFeeBalances As System.Windows.Forms.Panel
+    Friend WithEvents StatusStrip2 As System.Windows.Forms.StatusStrip
+    Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents StatusStrip12 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusStrip13 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusStrip14 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatusStrip5 As System.Windows.Forms.StatusStrip
+    Friend WithEvents crtVwFinFeeBalRpt As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents cboClass As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cboTerm As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cboYear As System.Windows.Forms.ComboBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents btnLoad As System.Windows.Forms.Button
+    Friend WithEvents cboReportType As System.Windows.Forms.ComboBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+End Class

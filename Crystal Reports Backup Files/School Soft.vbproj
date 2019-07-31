@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F99A539-3E8A-4290-BEEF-AEAD70BE3618}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>School_Soft.My.MyApplication</StartupObject>
+    <RootNamespace>School_Soft</RootNamespace>
+    <AssemblyName>School Soft</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>School Soft.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>School Soft.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Education-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guifreaks.Common">
+      <HintPath>..\..\..\..\..\..\..\VB CONTROLS\Guifreaks.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Guifreaks.NavigationBar">
+      <HintPath>..\..\..\..\..\..\..\VB CONTROLS\Guifreaks.NavigationBar.dll</HintPath>
+    </Reference>
+    <Reference Include="MDIWindowManager">
+      <HintPath>..\..\..\..\..\..\..\VB CONTROLS\MDIWindowManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmAcadExamResultsView.Designer.vb">
+      <DependentUpon>frmAcadExamResultsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadExamResultsView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadGrades.Designer.vb">
+      <DependentUpon>frmAcadGrades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadGrades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadMarkEntrySubjectWise.Designer.vb">
+      <DependentUpon>frmAcadMarkEntrySubjectWise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadMarkEntrySubjectWise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadMarkEntryClassWise.Designer.vb">
+      <DependentUpon>frmAcadMarkEntryClassWise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadMarkEntryClassWise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadReportForms.Designer.vb">
+      <DependentUpon>frmAcadReportForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadReportForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadResultsSummary.Designer.vb">
+      <DependentUpon>frmAcadResultsSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadResultsSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadStaffSubject.Designer.vb">
+      <DependentUpon>frmAcadStaffSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadStaffSubject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadStudentSubject.Designer.vb">
+      <DependentUpon>frmAcadStudentSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadStudentSubject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadSubjects.Designer.vb">
+      <DependentUpon>frmAcadSubjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadSubjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassHeads.Designer.vb">
+      <DependentUpon>frmClassHeads.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassHeads.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDomainRights.Designer.vb">
+      <DependentUpon>frmDomainRights.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDomainRights.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDomains.Designer.vb">
+      <DependentUpon>frmDomains.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDomains.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditMyAccount.Designer.vb">
+      <DependentUpon>frmEditMyAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditMyAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcadExaminations.Designer.vb">
+      <DependentUpon>frmAcadExaminations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcadExaminations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModules.Designer.vb">
+      <DependentUpon>frmModules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromoteStudent.Designer.vb">
+      <DependentUpon>frmPromoteStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPromoteStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultsViewing.Designer.vb">
+      <DependentUpon>frmResultsViewing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultsViewing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchClasses.Designer.vb">
+      <DependentUpon>frmSchClasses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchClasses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchDepartments.Designer.vb">
+      <DependentUpon>frmSchDepartments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchDepartments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchoolDetails.Designer.vb">
+      <DependentUpon>frmSchoolDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchoolDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchoolStaff.Designer.vb">
+      <DependentUpon>frmSchoolStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchoolStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchTeachingRooms.Designer.vb">
+      <DependentUpon>frmSchTeachingRooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchTeachingRooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchTermDates.Designer.vb">
+      <DependentUpon>frmSchTermDates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchTermDates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartUp.Designer.vb">
+      <DependentUpon>frmStartUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStartUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudAccomodation.Designer.vb">
+      <DependentUpon>frmStudAccomodation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudAccomodation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudClass.Designer.vb">
+      <DependentUpon>frmStudClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentDetails.Designer.vb">
+      <DependentUpon>frmStudentDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentFeeSummary.Designer.vb">
+      <DependentUpon>frmStudentFeeSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentFeeSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudFormSchDetails.Designer.vb">
+      <DependentUpon>frmStudFormSchDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudFormSchDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudImages.Designer.vb">
+      <DependentUpon>frmStudImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudParents.Designer.vb">
+      <DependentUpon>frmStudParents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudParents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAcadExamResultsView.resx">
+      <DependentUpon>frmAcadExamResultsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadGrades.resx">
+      <DependentUpon>frmAcadGrades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadMarkEntryClassWise.resx">
+      <DependentUpon>frmAcadMarkEntryClassWise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadMarkEntrySubjectWise.resx">
+      <DependentUpon>frmAcadMarkEntrySubjectWise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadReportForms.resx">
+      <DependentUpon>frmAcadReportForms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadResultsSummary.resx">
+      <DependentUpon>frmAcadResultsSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadStaffSubject.resx">
+      <DependentUpon>frmAcadStaffSubject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadStudentSubject.resx">
+      <DependentUpon>frmAcadStudentSubject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadSubjects.resx">
+      <DependentUpon>frmAcadSubjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassHeads.resx">
+      <DependentUpon>frmClassHeads.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDomainRights.resx">
+      <DependentUpon>frmDomainRights.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDomains.resx">
+      <DependentUpon>frmDomains.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditMyAccount.resx">
+      <DependentUpon>frmEditMyAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcadExaminations.resx">
+      <DependentUpon>frmAcadExaminations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModules.resx">
+      <DependentUpon>frmModules.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromoteStudent.resx">
+      <DependentUpon>frmPromoteStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultsViewing.resx">
+      <DependentUpon>frmResultsViewing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchClasses.resx">
+      <DependentUpon>frmSchClasses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchDepartments.resx">
+      <DependentUpon>frmSchDepartments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchoolDetails.resx">
+      <DependentUpon>frmSchoolDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchoolStaff.resx">
+      <DependentUpon>frmSchoolStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchTeachingRooms.resx">
+      <DependentUpon>frmSchTeachingRooms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchTermDates.resx">
+      <DependentUpon>frmSchTermDates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStartUp.resx">
+      <DependentUpon>frmStartUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudAccomodation.resx">
+      <DependentUpon>frmStudAccomodation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudClass.resx">
+      <DependentUpon>frmStudClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentDetails.resx">
+      <DependentUpon>frmStudentDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentFeeSummary.resx">
+      <DependentUpon>frmStudentFeeSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudFormSchDetails.resx">
+      <DependentUpon>frmStudFormSchDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudImages.resx">
+      <DependentUpon>frmStudImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudParents.resx">
+      <DependentUpon>frmStudParents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\user-login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Education-icon.ico" />
+    <None Include="Resources\graduate.jpg" />
+    <None Include="Resources\Service Manager.png" />
+    <None Include="Resources\Program Group.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
